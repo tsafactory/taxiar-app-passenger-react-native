@@ -5,11 +5,13 @@ import { Button, Icon, Screen, Text, TextField, TextFieldAccessoryProps } from "
 import { useStores } from "../models"
 import { AppStackScreenProps } from "../navigators"
 import { colors, spacing } from "../theme"
+import { FirebaseServices } from "../services/firebase"
 
 interface LoginScreenProps extends AppStackScreenProps<"Login"> {}
 
 export const LoginScreen: FC<LoginScreenProps> = observer(function LoginScreen(_props) {
   const authPasswordInput = useRef<TextInput>()
+  const [authFirebaseError, setAuthFirebaseError] = useState("")
   const [isAuthPasswordHidden, setIsAuthPasswordHidden] = useState(true)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [attemptsCount, setAttemptsCount] = useState(0)
@@ -33,20 +35,22 @@ export const LoginScreen: FC<LoginScreenProps> = observer(function LoginScreen(_
 
   const errors: typeof validationErrors = isSubmitted ? validationErrors : ({} as any)
 
-  function login() {
+  async function login() {
     setIsSubmitted(true)
     setAttemptsCount(attemptsCount + 1)
 
     if (Object.values(validationErrors).some((v) => !!v)) return
+    const response: any = await FirebaseServices.login(authEmail, authPassword)
+    if (response && response.error) {
+      setAuthFirebaseError(response.error);
+      return;
+    }
+    console.log("RESPONSE:", response);
 
-    // Make a request to your server to get an authentication token.
-    // If successful, reset the fields and set the token.
     setIsSubmitted(false)
     setAuthPassword("")
     setAuthEmail("")
-
-    // We'll mock this with a fake token.
-    setAuthToken(String(Date.now()))
+    setAuthToken(response.token)
   }
 
   const PasswordRightAccessory = useMemo(
@@ -80,6 +84,8 @@ export const LoginScreen: FC<LoginScreenProps> = observer(function LoginScreen(_
       <Text testID="login-heading" tx="loginScreen.signIn" preset="heading" style={$signIn} />
       <Text tx="loginScreen.enterDetails" preset="subheading" style={$enterDetails} />
       {attemptsCount > 2 && <Text tx="loginScreen.hint" size="sm" weight="light" style={$hint} />}
+
+      {authFirebaseError && authFirebaseError !== '' && <Text style={$authError} tx="loginScreen.errorAuth" />}
 
       <TextField
         value={authEmail}
@@ -138,6 +144,11 @@ const $enterDetails: TextStyle = {
 }
 
 const $hint: TextStyle = {
+  color: colors.tint,
+  marginBottom: spacing.medium,
+}
+
+const $authError: TextStyle = {
   color: colors.tint,
   marginBottom: spacing.medium,
 }

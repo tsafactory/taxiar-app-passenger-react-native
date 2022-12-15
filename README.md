@@ -2,6 +2,8 @@
 
 [![CircleCI](https://circleci.com/gh/infinitered/ignite.svg?style=svg)](https://circleci.com/gh/infinitered/ignite)
 
+
+
 ## The latest and greatest boilerplate for Infinite Red opinions
 
 This is the boilerplate that [Infinite Red](https://infinite.red) uses as a way to test bleeding-edge changes to our React Native stack.
@@ -128,6 +130,15 @@ Read [Detox setup instructions](./detox/README.md).
 - [2017 aka Andross](https://github.com/infinitered/ignite-andross)
 - [2016 aka Ignite 1.0](https://github.com/infinitered/ignite-ir-boilerplate-2016)
 
+## Nodejs Version
+
+Version use to build APP.
+
+```
+v16.14.2
+```
+
+
 ## Generator
 
 ```
@@ -139,3 +150,15 @@ npx ignite-cli generate screen create-cars
 ```
 npx expo start --clear
 ```
+
+# Install expo for react native
+
+```
+npx expo install firebase
+```
+
+
+# Debug APP
+
+
+http://10.211.37.142:19000/debugger-ui/

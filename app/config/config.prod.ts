@@ -7,4 +7,14 @@
  */
 export default {
   API_URL: "CHANGEME",
+  FIREBASE: {
+    appId: "app-id",
+    measurementId: "G-measurement-id",
+    apiKey: "AIzaSyAmGFfhxPfuc3SkgSAnPDmZ4FmRK-vFnaM",
+    authDomain: "taxiarv2-test.firebaseapp.com",
+    databaseURL: "https://taxiarv2-test.firebaseio.com",
+    projectId: "taxiarv2-test",
+    storageBucket: "taxiarv2-test.appspot.com",
+    messagingSenderId: "146819571451",
+  },
 }

@@ -1,0 +1,287 @@
+{
+  "project_info": {
+    "project_number": "146819571451",
+    "firebase_url": "https://taxiarv2-test.firebaseio.com",
+    "project_id": "taxiarv2-test",
+    "storage_bucket": "taxiarv2-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146819571451:android:5071f3120c0f2c2a",
+        "android_client_info": {
+          "package_name": "ar.com.taxiar.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146819571451-df38ersb4u07btfv1vuri78t1pdv26nv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ar.com.taxiar.driver",
+            "certificate_hash": "eaa21f49b77e493d584c7178efc529a2917c4a16"
+          }
+        },
+        {
+          "client_id": "146819571451-is1td57heoas3l2gka349h2vqsqmg2hl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ar.com.taxiar.driver",
+            "certificate_hash": "8630656af9ba69a613c22a894a0c58fbf7b3839c"
+          }
+        },
+        {
+          "client_id": "146819571451-mqnlon3stk9o7j40d7po3m24b9aqsmlo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ar.com.taxiar.driver",
+            "certificate_hash": "84660ab4b2aec8acfd45c9275bc9c8a3ff42f2d6"
+          }
+        },
+        {
+          "client_id": "146819571451-otv5uduki5fc53trpkuti1lmgcahd431.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9XRlZSuS-wJKlXwu4OY4WfyL0YtBqd0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146819571451-otv5uduki5fc53trpkuti1lmgcahd431.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "146819571451-66h2ddan2c71oq3babp042qasctt58an.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.taxiar.v2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146819571451:android:0b3a12f89f3480c8c49a5e",
+        "android_client_info": {
+          "package_name": "com.taxiar.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146819571451-2d7sqc09lfkp1i0uc40gq94nr9kd4tec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxiar.app",
+            "certificate_hash": "84660ab4b2aec8acfd45c9275bc9c8a3ff42f2d6"
+          }
+        },
+        {
+          "client_id": "146819571451-8e9ec39a6n196crrca2bte025l1jilmc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxiar.app",
+            "certificate_hash": "8630656af9ba69a613c22a894a0c58fbf7b3839c"
+          }
+        },
+        {
+          "client_id": "146819571451-kikvsre9hbf6rl1av6ug9869dllp3hqc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxiar.app",
+            "certificate_hash": "eaa21f49b77e493d584c7178efc529a2917c4a16"
+          }
+        },
+        {
+          "client_id": "146819571451-otv5uduki5fc53trpkuti1lmgcahd431.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9XRlZSuS-wJKlXwu4OY4WfyL0YtBqd0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146819571451-otv5uduki5fc53trpkuti1lmgcahd431.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "146819571451-66h2ddan2c71oq3babp042qasctt58an.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.taxiar.v2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146819571451:android:e5e0d557b2c99286c49a5e",
+        "android_client_info": {
+          "package_name": "com.taxiar.appv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146819571451-4p920jnfhtq6s51b4df40itkbf3rpepg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxiar.appv2",
+            "certificate_hash": "84660ab4b2aec8acfd45c9275bc9c8a3ff42f2d6"
+          }
+        },
+        {
+          "client_id": "146819571451-knbp2ihh2igadskgotrod5742sjvq0gp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxiar.appv2",
+            "certificate_hash": "8630656af9ba69a613c22a894a0c58fbf7b3839c"
+          }
+        },
+        {
+          "client_id": "146819571451-u3lm7dc6lqu3eh687ekbbv5fihis5ugl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxiar.appv2",
+            "certificate_hash": "eaa21f49b77e493d584c7178efc529a2917c4a16"
+          }
+        },
+        {
+          "client_id": "146819571451-otv5uduki5fc53trpkuti1lmgcahd431.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9XRlZSuS-wJKlXwu4OY4WfyL0YtBqd0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146819571451-otv5uduki5fc53trpkuti1lmgcahd431.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "146819571451-66h2ddan2c71oq3babp042qasctt58an.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.taxiar.v2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146819571451:android:03869e03b6430112",
+        "android_client_info": {
+          "package_name": "io.taxiar.v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146819571451-3ladrf4is0pt2ebroo19cnjrej7apu36.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.taxiar.v2",
+            "certificate_hash": "eaa21f49b77e493d584c7178efc529a2917c4a16"
+          }
+        },
+        {
+          "client_id": "146819571451-6vpl4rtbhfrjtp9ms8nhrdmmspk4rv9p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.taxiar.v2",
+            "certificate_hash": "8630656af9ba69a613c22a894a0c58fbf7b3839c"
+          }
+        },
+        {
+          "client_id": "146819571451-otv5uduki5fc53trpkuti1lmgcahd431.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9XRlZSuS-wJKlXwu4OY4WfyL0YtBqd0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146819571451-otv5uduki5fc53trpkuti1lmgcahd431.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "146819571451-66h2ddan2c71oq3babp042qasctt58an.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.taxiar.v2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146819571451:android:337a619288a600b7",
+        "android_client_info": {
+          "package_name": "io.taxiar.v21"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146819571451-ke4k3behtbvlu07nrfevj1j7i9d3egjj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "io.taxiar.v21",
+            "certificate_hash": "eaa21f49b77e493d584c7178efc529a2917c4a16"
+          }
+        },
+        {
+          "client_id": "146819571451-otv5uduki5fc53trpkuti1lmgcahd431.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9XRlZSuS-wJKlXwu4OY4WfyL0YtBqd0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146819571451-otv5uduki5fc53trpkuti1lmgcahd431.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "146819571451-66h2ddan2c71oq3babp042qasctt58an.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "io.taxiar.v2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
