@@ -5,7 +5,7 @@ import type {
   FirebaseError
 } from "./firebase.types"
 import { initializeApp } from "firebase/app"
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
 
 /**
  * Manages all requests to the Firebase. You can use this class to build out
@@ -36,6 +36,17 @@ export class FirebaseAuth {
         resolve(errorAuth)
       })
     })
+  }
+
+  async createUser(email: string, password: string): Promise<any>{
+    return new Promise( (resolve) => {
+      createUserWithEmailAndPassword(this.auth, email, password).then( (user) => {
+        resolve(user);
+      }).catch( (error) => {
+        const errorAuth: FirebaseError = { error: error.message}
+        resolve(errorAuth)
+      })
+    });
   }
 }
 
