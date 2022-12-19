@@ -4,6 +4,7 @@ import type {
   FirebaseToken,
   FirebaseError
 } from "./firebase.types"
+import { DatabaseService } from "../database";
 import { initializeApp } from "firebase/app"
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
 
@@ -29,7 +30,9 @@ export class FirebaseAuth {
   async login(email: string, password: string): Promise<FirebaseToken | FirebaseError> {
     return new Promise( (resolve) => {signInWithEmailAndPassword(this.auth, email, password)
       .then( (userCredential: any) => {
-        const auth: FirebaseToken = { token: userCredential._tokenResponse.idToken }
+        const token = { token: userCredential._tokenResponse.idToken }
+        const auth: FirebaseToken = token;
+        DatabaseService.create('token', token);
         resolve(auth)
       }).catch( (error) => {
         const errorAuth: FirebaseError = { error: error.message }
