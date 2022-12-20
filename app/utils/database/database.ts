@@ -3,7 +3,7 @@ import localStorage from 'react-native-sync-localstorage';
 export class Database {
 
   create(id: string, data: any){
-    localStorage.setItem(id, JSON.stringify(data));
+    localStorage.setItem(id, data);
   }
 
   delete(id: string){
@@ -19,6 +19,7 @@ export class Database {
     try {
       return JSON.parse(data);
     } catch (e) {
+      
       return data;
     }
   }

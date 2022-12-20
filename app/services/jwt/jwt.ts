@@ -4,7 +4,7 @@ import type {
 } from "./jwt.types"
 import { initializeApp } from "firebase/app"
 import { getAuth } from "firebase/auth";
-import { DatabaseService } from "../database";
+import { DatabaseService } from "../../utils/database";
 // eslint-disable-next-line camelcase
 import jwt_decode from "jwt-decode";
 

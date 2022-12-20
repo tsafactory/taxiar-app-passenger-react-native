@@ -5,7 +5,7 @@ import { Button, Icon, Screen, Text, TextField, TextFieldAccessoryProps } from "
 import { useStores } from "../models"
 import { AppStackScreenProps } from "../navigators"
 import { colors, spacing } from "../theme"
-import { FirebaseServices } from "../services/firebase"
+import { FirebaseServices } from "../utils/firebase"
 
 interface LoginScreenProps extends AppStackScreenProps<"Login"> {}
 
@@ -45,8 +45,6 @@ export const LoginScreen: FC<LoginScreenProps> = observer(function LoginScreen(_
       setAuthFirebaseError(response.error);
       return;
     }
-    console.log("RESPONSE:", response);
-
     setIsSubmitted(false)
     setAuthPassword("")
     setAuthEmail("")

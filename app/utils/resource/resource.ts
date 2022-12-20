@@ -52,11 +52,10 @@ export class Resource {
     }
 
     this.apisauce = create(configStruct)
-
     this.apisauce.axiosInstance.interceptors.request.use( (config) => {
-      const token = DatabaseService.get('token');
-      if(token){
-        config.headers.Authorization = `Bearer ${token}`
+      const token = DatabaseService.get('token');      
+      if(token && token.token){
+        config.headers.Authorization = `Bearer ${token.token}`
       }
       return config
     },     

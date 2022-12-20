@@ -6,17 +6,18 @@
  * documentation for more details.
  */
 import {
-  ApiResponse, // @demo remove-current-line
+  ApiResponse,
   ApisauceInstance,
   create,
 } from "apisauce"
 import Config from "../../config"
-import { GeneralApiProblem, getGeneralApiProblem } from "./apiProblem" // @demo remove-current-line
+import { GeneralApiProblem, getGeneralApiProblem } from "./apiProblem"
 import type {
   ApiConfig,
-  ApiFeedResponse, // @demo remove-current-line
+  ApiFeedResponse,
 } from "./api.types"
-import type { EpisodeSnapshotIn } from "../../models/Episode" // @demo remove-current-line
+import type { EpisodeSnapshotIn } from "../../models/Episode"
+import { ResourceService } from "../../utils/resource"
 
 /**
  * Configuring the apisauce instance.
@@ -48,16 +49,12 @@ export class Api {
     })
   }
 
-  // @demo remove-block-start
   /**
    * Gets a list of recent React Native Radio episodes.
    */
   async getEpisodes(): Promise<{ kind: "ok"; episodes: EpisodeSnapshotIn[] } | GeneralApiProblem> {
-    // make the api call
-    const response: ApiResponse<ApiFeedResponse> = await this.apisauce.get(
-      `api.json?rss_url=https%3A%2F%2Ffeeds.simplecast.com%2FhEI_f9Dx`,
-    )
-
+    const response: ApiResponse<ApiFeedResponse> = await ResourceService.get(`api.json?rss_url=https%3A%2F%2Ffeeds.simplecast.com%2FhEI_f9Dx`, {})
+    console.log('GET DATA FROM REMOTE SERVER', response);
     // the typical ways to die when calling an api
     if (!response.ok) {
       const problem = getGeneralApiProblem(response)
@@ -81,7 +78,6 @@ export class Api {
       return { kind: "bad-data" }
     }
   }
-  // @demo remove-block-end
 }
 
 // Singleton instance of the API for convenience
